@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/dasseya1/twitterbot/issues"
   },
-  "homepage": "https://github.com/dasseya1/twitterbot#readme"
+  "homepage": "https://github.com/dasseya1/twitterbot#readme",
+  "dependencies": {
+    "twitter": "^1.7.1"
+  }
 }
