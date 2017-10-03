@@ -3,10 +3,10 @@ var TwitterPackage = require('twitter');
 // replace the words in caps with the keys that
 // we saw before on apps.twitter.com
 var secret = {
-  consumer_key: 'TODO',
-  consumer_secret: 'TODO',
-  access_token_key: 'TODO',
-  access_token_secret: 'TODO'
+  consumer_key: process.env.consumer_key,
+  consumer_secret: process.env.consumer_secret,
+  access_token_key: process.env.access_token_key,
+  access_token_secret: process.env.access_token_secret
 }
  
 var Twitter = new TwitterPackage(secret);
