@@ -1,5 +1,6 @@
 var TwitterPackage = require('twitter');
- 
+require('dotenv').config();
+
 // replace the words in caps with the keys that
 // we saw before on apps.twitter.com
 var secret = {
@@ -12,7 +13,7 @@ var secret = {
 var Twitter = new TwitterPackage(secret);
  
 var query = "alot";
-Twitter.get('search/tweets', {q: query, count: 1, lang:"en"}, function(error, tweets, response) {
+Twitter.get('search/tweets', {q: query, count: 3, lang:"en"}, function(error, tweets, response) {
     
    var tweet_list = tweets['statuses'];
     
